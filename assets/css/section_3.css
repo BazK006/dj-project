@@ -1,0 +1,78 @@
+/* =========================================
+   Section: Live Performance (Video Grid)
+========================================= */
+
+/* 1. Structure & Typography */
+#performance {
+    background-color: var(--brand-darkbg);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.perf-heading {
+    font-size: clamp(3.5rem, 7vw, 6.5rem);
+    line-height: 0.85;
+    letter-spacing: -0.02em;
+}
+
+/* 2. Video Card Container */
+.video-card {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+/* 3. Media Elements (Video & Image Overlay) */
+.custom-video,
+.video-card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.video-card:hover .custom-video,
+.video-card:hover img {
+    transform: scale(1.03);
+    /* ซูมเบาๆ ตอน Hover ให้ดูมีมิติ */
+}
+
+/* 4. Badges (มุมขวาบน & มุมล่างซ้าย) */
+.top-right-badge,
+.bottom-left-badge {
+    position: absolute;
+    z-index: 2;
+    pointer-events: none;
+    /* คลิกทะลุไปโดนตัววิดีโอเพื่อสั่ง เล่น/หยุด ได้ */
+}
+
+/* ป้ายมุมขวาบน (ไอคอน) */
+.top-right-badge {
+    top: 16px;
+    right: 16px;
+    width: 32px;
+    height: 32px;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ป้ายมุมล่างซ้าย (ลำดับวิดีโอ LIVE 04) */
+.bottom-left-badge {
+    bottom: 16px;
+    left: 16px;
+    background-color: #000000;
+    padding: 4px 8px;
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}

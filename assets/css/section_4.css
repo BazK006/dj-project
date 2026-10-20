@@ -1,0 +1,83 @@
+/* =========================================
+   Section 4: Selected Visuals (Gallery Grid)
+========================================= */
+
+#gallery {
+    background-color: var(--brand-darkbg);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.gallery-heading {
+    font-size: clamp(3.5rem, 6vw, 5.5rem);
+    line-height: 0.85;
+    letter-spacing: -0.02em;
+}
+
+/* 1. Layout หลัก (ซ้าย-ขวา) */
+.gallery-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* มือถือ: เรียงต่อกันบนลงล่าง */
+    gap: 8px;
+}
+
+@media (min-width: 992px) {
+    .gallery-layout {
+        grid-template-columns: 1fr 1fr;
+        /* จอคอม: แบ่งครึ่ง 50:50 */
+        align-items: stretch;
+        /* สั่งให้กล่องซ้ายและขวายืดความสูงให้เท่ากันเสมอ */
+    }
+}
+
+/* 2. Grid ฝั่งขวา (2x2) */
+.gallery-right-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 8px;
+    height: 100%;
+}
+
+/* 3. สไตล์กล่องบรรจุภาพ */
+.gallery-item {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: #111111;
+}
+
+/* ล็อกสัดส่วนรูปเล็ก 4 รูปฝั่งขวา ให้เป็นแนวนอนเสมอ (กว้าง 3 ส่วน : สูง 2 ส่วน) */
+.gallery-right-grid .gallery-item {
+    aspect-ratio: 3 / 2;
+}
+
+
+.gallery-item-large {
+    height: 100%;
+    aspect-ratio: 3 / 4;
+}
+
+@media (min-width: 992px) {
+    .gallery-item-large {
+        aspect-ratio: auto;
+    }
+}
+
+/* 4. ควบคุมรูปภาพ (ครอบตัดเป๊ะๆ ไม่ดันกล่อง) */
+.gallery-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.03);
+    filter: brightness(1.1);
+}

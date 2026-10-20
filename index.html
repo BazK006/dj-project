@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DJ GOBLIN - Portfolio</title>
+
+    <!-- โหลด Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- โหลด Google Fonts: Space Grotesk -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/section_1.css">
+    <link rel="stylesheet" href="assets/css/section_2.css">
+    <link rel="stylesheet" href="assets/css/section_3.css">
+    <link rel="stylesheet" href="assets/css/section_4.css">
+    <link rel="stylesheet" href="assets/css/section_5.css">
+    <link rel="stylesheet" href="assets/css/ui_responsive.css">
+</head>
+
+<!-- แก้ Body: ลบ hero-background, min-vh-100 และ overflow-hidden ออก เพื่อให้เว็บ Scroll ได้ตามปกติ -->
+
+<body class="position-relative d-flex flex-column"
+    style="background-color: var(--brand-darkbg); color: #ffffff; font-family: 'Space Grotesk', sans-serif; -webkit-font-smoothing: antialiased;">
+
+    <!-- Responsive Bootstrap Navbar -->
+    <header class="header-gradient fixed-top z-3">
+        <nav class="navbar navbar-expand-lg navbar-dark py-2 nav-shell">
+            <div class="container-xxl px-3 px-sm-4 px-lg-5">
+                <a class="navbar-brand d-flex align-items-center user-select-none m-0" href="#"
+                    aria-label="DJ Donkey home">
+                    <img src="assets/icons/Logodjdonkey.png" alt="DJ Donkey Logo" class="site-logo">
+                </a>
+
+                <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mainNavigation">
+                    <ul
+                        class="navbar-nav ms-auto align-items-lg-center gap-lg-3 gap-xl-4 py-3 py-lg-0 fw-semibold tracking-superwide">
+                        <li class="nav-item"><a class="nav-link nav-link-item" href="#about"
+                                data-target="#about">ABOUT</a></li>
+                        <li class="nav-item"><a class="nav-link nav-link-item" href="#performance"
+                                data-target="#performance">PERFORMANCE</a></li>
+                        <li class="nav-item"><a class="nav-link nav-link-item" href="#gallery"
+                                data-target="#gallery">GALLERY</a></li>
+                        <li class="nav-item"><a class="nav-link nav-link-item" href="#booking"
+                                data-target="#booking">BOOKING</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex-grow-1">
+        <!-- ================= HERO SECTION ================= -->
+        <section id="hero" class="hero-background min-vh-100 d-flex align-items-center position-relative">
+            <div class="container-xxl px-3 px-sm-4 px-lg-5 py-5">
+                <div class="hero-content">
+
+                    <p class="fw-bold tracking-superwide text-uppercase mb-3"
+                        style="color: var(--brand-gold); font-size: 13px;">
+                        Bangkok &middot; Thailand
+                    </p>
+
+                    <h1 class="fw-bold title-fluid text-uppercase mb-4">
+                        DJ<br>Donkey
+                    </h1>
+
+                    <p class="fw-medium tracking-superwide text-uppercase mb-5 text-light" style="font-size: 15px;">
+                        Hip-Hop &middot; Open Format &middot; High Energy
+                    </p>
+
+                    <div class="hero-actions d-flex flex-column flex-sm-row gap-3">
+                        <button class="btn btn-gold rounded-pill fw-bold tracking-widest text-uppercase px-5 py-3"
+                            style="font-size: 12px;">
+                            Book DJ Goblin
+                        </button>
+                        <button
+                            class="btn btn-outline-custom rounded-pill fw-bold tracking-widest text-uppercase px-5 py-3 d-flex align-items-center justify-content-center gap-2"
+                            style="font-size: 12px;">
+                            Watch Sets
+
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="7" y1="17" x2="17" y2="7"></line>
+                                <polyline points="7 7 17 7 17 17"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SECTION 1: ABOUT ================= -->
+        <section id="about" class="section-padding">
+            <div class="container-xxl px-3 px-sm-4 px-lg-5">
+                <div class="row align-items-center gy-4 gy-lg-5">
+
+                    <div class="col-12 col-lg-6 pe-lg-5">
+                        <p class="fw-bold tracking-widest text-uppercase mb-3"
+                            style="color: var(--brand-gold); font-size: 12px;">
+                            ABOUT THE ARTIST
+                        </p>
+
+                        <h2 class="fw-bold text-white text-uppercase mb-4 about-heading">
+                            CROWD-FIRST.<br>
+                            HIGH<br>
+                            ENERGY.
+                        </h2>
+
+                        <p class="about-text mb-4">
+                            DJ GOBLIN is a Bangkok-based DJ known for high-energy, open-format sets that seamlessly
+                            blend
+                            Hip-Hop, R&B, Pop, Pop Dance, and exclusive edits.
+                        </p>
+
+                        <p class="about-text mb-5">
+                            Built around crowd connection, fast-paced transitions and unexpected genre switches, his
+                            sets
+                            move
+                            from club anthems to sing-along moments without losing momentum. GOBLIN has brought his
+                            signature
+                            sound to international crowds across Asia.
+                        </p>
+
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="genre-badge">HIP-HOP</span>
+                            <span class="genre-badge">OPEN FORMAT</span>
+                            <span class="genre-badge">R&B</span>
+                            <span class="genre-badge">POP</span>
+                            <span class="genre-badge">POP DANCE</span>
+                            <span class="genre-badge">HIGH ENERGY EDITS</span>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6">
+                        <img src="assets/images/img_1.png" alt="DJ Goblin Portrait" class="about-image img-fluid"
+                            style="object-fit: cover; object-position: center 20%;">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SECTION 2: International ================= -->
+        <section id="international" class="section-padding">
+            <div class="container-xxl px-3 px-sm-4 px-lg-5">
+
+                <!-- ส่วน Header ของ Section -->
+                <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-end mb-5">
+                    <div>
+                        <p class="fw-bold tracking-widest text-uppercase mb-3"
+                            style="color: var(--brand-gold); font-size: 12px;">
+                            INTERNATIONAL EXPERIENCE
+                        </p>
+
+                        <h2 class="fw-bold text-white text-uppercase m-0 intl-heading">
+                            GOBLIN<br>
+                            ACROSS ASIA.
+                        </h2>
+                    </div>
+
+                    <div class="text-start text-lg-end mt-4 mt-lg-0 d-none d-md-block">
+                        <p class="tracking-widest text-uppercase m-0"
+                            style="color: rgba(255,255,255,0.4); font-size: 10px; line-height: 1.8;">
+                            SELECTED INTERNATIONAL<br>PERFORMANCES &middot; ASIA
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row g-3 tour-grid-container mb-3">
+
+                    <!-- Card 01: SOUTH KOREA -->
+                    <div class="col-12 col-sm-6 col-xl-3">
+                        <div class="tour-card">
+                            <div class="d-flex justify-content-between align-items-start z-1">
+                                <span class="card-number">01</span>
+                                <span class="card-code fw-bold">KR</span>
+                            </div>
+                            <div class="z-1">
+                                <!-- ข้อความ SOUTH KOREA ตัดขึ้นบรรทัดใหม่ตามต้นฉบับ -->
+                                <h3 class="card-country fw-bold text-uppercase m-0">SOUTH<br>KOREA</h3>
+                                <p class="card-subtext text-uppercase m-0 mt-3">INTERNATIONAL PERFORMANCE</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 02: CHINA -->
+                    <div class="col-12 col-sm-6 col-xl-3">
+                        <div class="tour-card">
+                            <div class="d-flex justify-content-between align-items-start z-1">
+                                <span class="card-number">02</span>
+                                <span class="card-code fw-bold">CN</span>
+                            </div>
+                            <div class="z-1">
+                                <h3 class="card-country fw-bold text-uppercase m-0">CHINA</h3>
+                                <p class="card-subtext text-uppercase m-0 mt-3">INTERNATIONAL PERFORMANCE</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 03: VIETNAM -->
+                    <div class="col-12 col-sm-6 col-xl-3">
+                        <div class="tour-card">
+                            <div class="d-flex justify-content-between align-items-start z-1">
+                                <span class="card-number">03</span>
+                                <span class="card-code fw-bold">VN</span>
+                            </div>
+                            <div class="z-1">
+                                <h3 class="card-country fw-bold text-uppercase m-0">VIETNAM</h3>
+                                <p class="card-subtext text-uppercase m-0 mt-3">INTERNATIONAL PERFORMANCE</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 04: LAOS -->
+                    <div class="col-12 col-sm-6 col-xl-3">
+                        <div class="tour-card">
+                            <div class="d-flex justify-content-between align-items-start z-1">
+                                <span class="card-number">04</span>
+                                <span class="card-code fw-bold">LA</span>
+                            </div>
+                            <div class="z-1">
+                                <h3 class="card-country fw-bold text-uppercase m-0">LAOS</h3>
+                                <p class="card-subtext text-uppercase m-0 mt-3">INTERNATIONAL PERFORMANCE</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- ข้อความเล็กมุมขวาล่างใต้ Grid -->
+                <div class="d-flex justify-content-end pr-md-4">
+                    <p class="tracking-widest text-uppercase m-0" style="color: var(--brand-gold); font-size: 10px;">
+                        BANGKOK &rarr; ASIA <span style="color: rgba(255,255,255,0.3)">/</span> DJ GOBLIN
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SECTION 2.1: MARQUEE ================= -->
+        <div class="marquee-section">
+            <div class="marquee-wrapper">
+
+                <!-- ชุดข้อความที่ 1 -->
+                <div class="marquee-content">
+                    <span class="marquee-text">POP DANCE</span>
+                    <span class="marquee-star">✦</span>
+                    <span class="marquee-text">HIGH ENERGY EDITS</span>
+                    <span class="marquee-star">✦</span>
+                    <span class="marquee-text">HIP-HOP</span>
+                    <span class="marquee-star">✦</span>
+                    <span class="marquee-text">OPEN FORMAT</span>
+                    <span class="marquee-star">✦</span>
+                    <span class="marquee-text">R&B</span>
+                    <span class="marquee-star">✦</span>
+                </div>
+
+                <!-- ชุดข้อความที่ 2 (Copy เหมือนชุดแรกเป๊ะ เพื่อให้วนลูปได้เนียนตาแบบ Seamless) -->
+                <div class="marquee-content">
+                    <span class="marquee-text">POP DANCE</span>
+                    <span class="marquee-star">✦</span>
+                    <span class="marquee-text">HIGH ENERGY EDITS</span>
+                    <span class="marquee-star">✦</span>
+                    <span class="marquee-text">HIP-HOP</span>
+                    <span class="marquee-star">✦</span>
+                    <span class="marquee-text">OPEN FORMAT</span>
+                    <span class="marquee-star">✦</span>
+                    <span class="marquee-text">R&B</span>
+                    <span class="marquee-star">✦</span>
+                </div>
+
+                <!-- ชุดข้อความที่ 3 (เผื่อไว้สำหรับจอ Ultra-wide จะได้ไม่มีพื้นที่แหว่ง) -->
+                <div class="marquee-content">
+                    <span class="marquee-text">POP DANCE</span>
+                    <span class="marquee-star">✦</span>
+                    <span class="marquee-text">HIGH ENERGY EDITS</span>
+                    <span class="marquee-star">✦</span>
+                    <span class="marquee-text">HIP-HOP</span>
+                    <span class="marquee-star">✦</span>
+                    <span class="marquee-text">OPEN FORMAT</span>
+                    <span class="marquee-star">✦</span>
+                    <span class="marquee-text">R&B</span>
+                    <span class="marquee-star">✦</span>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ================= SECTION 3: LIVE PERFORMANCE ================= -->
+        <section id="performance" class="section-padding">
+            <div class="container-xxl px-3 px-sm-4 px-lg-5">
+
+                <!-- ส่วน Header (ข้อความด้านบน) -->
+                <div class="mb-5">
+                    <p class="fw-bold tracking-widest text-uppercase mb-3"
+                        style="color: var(--brand-gold); font-size: 12px;">
+                        LIVE PERFORMANCE
+                    </p>
+
+                    <h2 class="fw-bold text-white text-uppercase m-0 perf-heading">
+                        FEEL THE<br>
+                        ENERGY.
+                    </h2>
+                </div>
+
+
+                <!-- ส่วน Grid วิดีโอ 3 คอลัมน์ -->
+                <div class="row g-2 g-md-3 mb-5 performance-grid">
+
+                    <!-- Video 1 -->
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="video-card">
+                            <video loop playsinline class="custom-video">
+                                <source src="assets/video/video_1.mp4">
+                            </video>
+
+                            <!-- ไอคอนขวาบน -->
+                            <div class="top-right-badge">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </div>
+
+                            <div class="bottom-left-badge">LIVE 01</div>
+                        </div>
+                    </div>
+
+                    <!-- Video 2 -->
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="video-card">
+                            <video loop playsinline class="custom-video">
+                                <source src="assets/video/video_2.mp4">
+                            </video>
+
+                            <!-- ไอคอนขวาบน -->
+                            <div class="top-right-badge">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </div>
+
+                            <div class="bottom-left-badge">LIVE 02</div>
+                        </div>
+                    </div>
+
+                    <!-- Video 3 -->
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="video-card">
+                            <video loop playsinline class="custom-video">
+                                <source src="assets/video/video_3.mp4">
+                            </video>
+
+                            <div class="top-right-badge">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </div>
+
+                            <div class="bottom-left-badge">LIVE 03</div>
+                        </div>
+                    </div>
+
+                    <!-- Video 4 -->
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="video-card border-top border-dark">
+                            <video loop playsinline class="custom-video">
+                                <source src="assets/video/video_4.mp4">
+                            </video>
+
+                            <!-- ไอคอนขวาบน -->
+                            <div class="top-right-badge">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </div>
+
+                            <div class="bottom-left-badge">LIVE 04</div>
+                        </div>
+                    </div>
+
+                    <!-- Video 5 -->
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="video-card border border-dark">
+                            <video loop playsinline class="custom-video">
+                                <source src="assets/video/video_5.mp4">
+                            </video>
+
+                            <!-- ไอคอนขวาบน -->
+                            <div class="top-right-badge">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </div>
+
+                            <div class="bottom-left-badge">LIVE 05</div>
+                        </div>
+                    </div>
+
+                    <!-- Video 6 -->
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="video-card border-top border-dark">
+                            <video loop playsinline class="custom-video">
+                                <source src="assets/video/video_6.mp4">
+                            </video>
+
+                            <!-- ไอคอนขวาบน -->
+                            <div class="top-right-badge">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </div>
+
+                            <div class="bottom-left-badge">LIVE 06</div>
+                        </div>
+                    </div>
+
+                    <!-- ปุ่ม MORE ON YOUTUBE ด้านล่างซ้าย -->
+                    <div>
+                        <button
+                            class="btn btn-gold rounded-pill fw-bold tracking-widest text-uppercase px-4 py-2 d-inline-flex align-items-center gap-2 mt-3"
+                            style="font-size: 12px;">
+                            MORE ON YOUTUBE
+                            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="7" y1="17" x2="17" y2="7"></line>
+                                <polyline points="7 7 17 7 17 17"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SECTION 4: SELECTED VISUALS ================= -->
+        <section id="gallery" class="section-padding">
+            <div class="container-xxl px-3 px-sm-4 px-lg-5">
+
+                <!-- Header ส่วนหัว -->
+                <div class="mb-5">
+                    <p class="fw-bold tracking-widest text-uppercase mb-3"
+                        style="color: var(--brand-gold); font-size: 12px;">
+                        SELECTED VISUALS
+                    </p>
+                    <h2 class="fw-bold text-white text-uppercase m-0 gallery-heading">
+                        GOBLIN<br>
+                        IN MOTION.
+                    </h2>
+                </div>
+
+                <!-- Main Gallery Grid -->
+                <div class="gallery-layout">
+
+                    <!-- ฝั่งซ้าย: รูปใหญ่ (Featured Image) -->
+                    <div class="gallery-item gallery-item-large">
+                        <img class="img-fluid" src="assets/images/img_3.png" style="object-position: center 35%;"
+                            alt="Goblin Visual Large">
+                    </div>
+
+                    <!-- ฝั่งขวา: ตาราง 2x2 (4 รูปเล็ก) -->
+                    <div class="gallery-right-grid">
+
+                        <!-- รูปที่ 1 (ขวาบน-ซ้าย) -->
+                        <div class="gallery-item">
+                            <img class="img-fluid" src="assets/images/img_4.png" alt="Goblin Visual 1"
+                                style="object-position: center 35%;">
+                        </div>
+
+                        <!-- รูปที่ 2 (ขวาบน-ขวา) -->
+                        <div class=" gallery-item">
+                            <img class="img-fluid" src="assets/images/img_5.png" alt="Goblin Visual 2"
+                                style="object-position: center 10%;">
+                        </div>
+
+                        <!-- รูปที่ 3 (ขวาล่าง-ซ้าย) -->
+                        <div class="gallery-item">
+                            <img class="img-fluid" src="assets/images/img_6.png" alt="Goblin Visual 3"
+                                style="object-position: center 35%;">
+                        </div>
+
+                        <!-- รูปที่ 4 (ขวาล่าง-ขวา) -->
+                        <div class="gallery-item">
+                            <img class="img-fluid" src="assets/images/img_7.png" alt="Goblin Visual 4"
+                                style="object-position: center 10%;">
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ================= SECTION 5: BOOKING & CONTACT ================= -->
+        <section id="booking" class="section-padding text-center">
+            <div class="container-xxl px-3 px-sm-4 px-lg-5">
+                <div class="container-fluid p-0">
+
+                    <!-- Overline -->
+                    <p class="fw-bold tracking-widest text-uppercase mb-3"
+                        style="color: var(--brand-gold); font-size: 11px;">
+                        BOOKING & CONTACT
+                    </p>
+
+                    <!-- Heading หลัก -->
+                    <h2 class="fw-bold text-white text-uppercase mb-5 booking-heading mx-auto"
+                        style="max-width: 900px;">
+                        BRING GOBLIN<br>
+                        TO YOUR CITY.
+                    </h2>
+
+                    <!-- กลุ่มปุ่มกด CTA (Center Aligned) -->
+                    <div
+                        class="booking-actions d-flex flex-column flex-sm-row flex-wrap justify-content-center align-items-stretch align-items-sm-center gap-3">
+
+                        <!-- ปุ่ม 1: Primary (สีทอง) -->
+                        <a href="#"
+                            class="btn btn-gold rounded-pill fw-bold tracking-widest text-uppercase px-4 py-2 d-inline-flex align-items-center gap-2"
+                            style="font-size: 10px;">
+                            BOOKING &mdash; INSTAGRAM
+                            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="7" y1="17" x2="17" y2="7"></line>
+                                <polyline points="7 7 17 7 17 17"></polyline>
+                            </svg>
+                        </a>
+
+                        <!-- ปุ่ม 2: Outline (YOUTUBE) -->
+                        <a href="#"
+                            class="btn btn-outline-custom rounded-pill fw-bold tracking-widest text-uppercase px-4 py-2 d-inline-flex align-items-center gap-2"
+                            style="font-size: 10px;">
+                            YOUTUBE
+                            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="7" y1="17" x2="17" y2="7"></line>
+                                <polyline points="7 7 17 7 17 17"></polyline>
+                            </svg>
+                        </a>
+
+                        <!-- ปุ่ม 3: Outline (TIKTOK) -->
+                        <a href="#"
+                            class="btn btn-outline-custom rounded-pill fw-bold tracking-widest text-uppercase px-4 py-2 d-inline-flex align-items-center gap-2"
+                            style="font-size: 10px;">
+                            TIKTOK
+                            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="7" y1="17" x2="17" y2="7"></line>
+                                <polyline points="7 7 17 7 17 17"></polyline>
+                            </svg>
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= FOOTER ================= -->
+        <footer class="site-footer">
+            <div class="container-xxl px-3 px-sm-4 px-lg-5">
+                <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center gap-2">
+
+                    <!-- ฝั่งซ้าย: Copyright -->
+                    <p class="footer-text text-uppercase m-0">
+                        &copy; 2026 DJ GOBLIN
+                    </p>
+
+                    <!-- ฝั่งขวา: Location / Status -->
+                    <p class="footer-text text-uppercase m-0">
+                        BANGKOK, THAILAND
+                    </p>
+
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+    </script>
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>
